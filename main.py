@@ -6,8 +6,9 @@ NUTRITIONIX_APP_ID = os.environ["NUTRITIONIX_APP_ID"]
 NUTRITIONIX_APP_KEY = os.environ["NUTRITIONIX_APP_KEY"]
 NUTRITIONIX_API_URL = "https://trackapi.nutritionix.com"
 EXERCISE_ENDPOINT = f"{NUTRITIONIX_API_URL}/v2/natural/exercise"
-SHEETY_ENDPOINT = "https://api.sheety.co/60014b6b16339df255298504d4b57e49/myWorkouts/workouts"
+SHEETY_USER_ID = os.environ["SHEETY_USER_ID"]
 SHEETY_KEY = os.environ["SHEETY_KEY"]
+SHEETY_ENDPOINT = f"https://api.sheety.co/{SHEETY_USER_ID}/myWorkouts/workouts"
 
 GENDER = "male"
 WEIGHT = 70.0
