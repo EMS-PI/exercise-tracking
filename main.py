@@ -7,6 +7,7 @@ NUTRITIONIX_APP_KEY = os.environ["NUTRITIONIX_APP_KEY"]
 NUTRITIONIX_API_URL = "https://trackapi.nutritionix.com"
 EXERCISE_ENDPOINT = f"{NUTRITIONIX_API_URL}/v2/natural/exercise"
 SHEETY_ENDPOINT = "https://api.sheety.co/60014b6b16339df255298504d4b57e49/myWorkouts/workouts"
+SHEETY_KEY = os.environ["SHEETY_KEY"]
 
 GENDER = "male"
 WEIGHT = 70.0
@@ -34,7 +35,7 @@ def exercise_data(user_input):
 
 def post_exercise(exercises):
     headers = {
-        "Authorization": "Bearer SMbOmeLJF^06TjH4@fX@5Gwx9dn1RAQ9",
+        "Authorization": SHEETY_KEY,
         "Content-Type": "application/json"
     }
 
